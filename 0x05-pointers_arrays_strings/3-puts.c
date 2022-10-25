@@ -1,16 +1,19 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _puts - a function that prints a string stdout.
+ * @str: an input string variable pointing to type char
+ * Return: Nothing
  */
 
-int main(void)
+void _puts(char *str)
 {
-	char *str;
+	int i = 0;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	_puts(str);
-	return (0);
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
