@@ -1,28 +1,26 @@
 #include "main.h"
-#include <string.h>
-/**
- * rev_string - this function reverses a string
- *@s: string to reverse
- * Return: nothing
- */
-void rev_string(char *s)
-{
-	int i, len, temp;
-	/*
-	 *strlen() gets the length of string
-	 */
-	len = strlen(s);
 
-	/*
-	 * Use for loop to iterate the string
-	 */
-	for (i = 0; i < len / 2; i++)
+/**
+ * more_numbers -  Print 10 times the numbers since 0 up to 14
+ *
+ * Return: 10 times of the numbers since 0 up to 14
+ */
+void more_numbers(void)
+{
+	int x, y;
+
+	for (x = 0; x < 10; x++)
 	{
-		/**
-		 * temp variable holds the string temporarily
-		 */
-		temp = s[i];
-		s[i] = s[len - i - 1];
-		s[len - i - 1] = temp;
+		for (y = 0; y <= 14; y++)
+		{
+			if (y > 9)
+			{
+				_putchar((y / 10) + '0');
+			}
+
+			_putchar((y % 10) + '0');
+		}
+
+		_putchar('\n');
 	}
 }
