@@ -6,6 +6,7 @@
   *
   * Return: Always 0 (Success)
   */
+
 int main(void)
 {
 	long x, maxf;
@@ -24,3 +25,4 @@ int main(void)
 
 	return (0);
 }
+
